@@ -123,18 +123,18 @@ def load_data(data_dir=r'C:\PythonBC\Project\Data', fname='2019-04-27.csv', nrow
     return df
 
 #%% example usage
-fname = '2019-04-27.csv'
-fname_zip = '2019-04-27.zip'
-data_dir = r'C:\PythonBC\Project\Data'
+#fname = '2019-04-27.csv'
+#fname_zip = '2019-04-27.zip'
+#data_dir = r'C:\PythonBC\Project\Data'
 
-start = time.time()
-df = load_data(fname=fname, data_dir=data_dir, Verbose=True)
-end = time.time()
-print('time to load file: {0:3.3f} seconds'.format(end-start))
+#start = time.time()
+#df = load_data(fname=fname, data_dir=data_dir, Verbose=True)
+#end = time.time()
+#print('time to load file: {0:3.3f} seconds'.format(end-start))
 
 # get an idea of how much memory we are using
-print(df.memory_usage(deep=True))
-print('size in memory:', mem_usage(df)) #311.583 MB
+#print(df.memory_usage(deep=True))
+#print('size in memory:', mem_usage(df)) #311.583 MB
 
 # compare to default settings (raises an error)
 #df2 = pd.read_csv(data_dir + '\\' + fname)
