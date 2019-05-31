@@ -232,7 +232,7 @@ def local_hour_creator(data_dir=r'C:\PythonBC\RootData', f_ext='.csv', big_zip=F
 
 #%% example usage
 #define data directory
-data_dir = r'/Users/bryan/root/data/monday'
+data_dir = r'D:\Root.Ad.Auction\Data\1\monday'
 
 #reshape data from (days) to (columns) using *all columns* and save output as .gzip
 reshape_files(data_dir=data_dir, f_ext='.csv')

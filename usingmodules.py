@@ -17,12 +17,19 @@ Created on Sat May 25 20:21:42 2019
 *************************************************************'''
 
 import load_file as lf
+import matplotlib.pyplot as plt
 
-fname = '2019-04-27.csv'
+
+fname = '2019-04-12.csv'
 fname_zip = '2019-04-27.zip'
 data_dir = r'D:\Root.Ad.Auction\Data\1'
 
-df = lf.load_data(fname=fname, data_dir=data_dir, Verbose=True)
+df = lf.load_data(fname=fname, data_dir=data_dir, Verbose=False)
 
-    
-    
+#df.plot('hour','spend')
+x = df['hour']
+y = df['spend']
+
+plt.scatter(x,y)
+#plt.xlim(8,12)
+plt.show()   

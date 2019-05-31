@@ -132,7 +132,7 @@ def load_data(data_dir=r'C:\PythonBC\RootData', fname='2019-04-27.csv', Verbose=
 	mydtype = {'auction_id': str,
 		'inventory_source': 'category',
 		'app_bundle': 'category',
-		'category': 'category',
+		'category': str,
 		'inventory_interstitial': np.bool,
 		'geo_zip': float,
 		'platform_bandwidth': 'category',
